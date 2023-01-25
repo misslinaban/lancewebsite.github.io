@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KARAIYA STOP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Georgia", serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-opacity w3-hover-opacity-off" style="background:#E2A683" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button"><b>HOME</b></a>
+    <a href="#menu" class="w3-bar-item w3-button"><b>MENU</b></a>
+    <a href="#about" class="w3-bar-item w3-button"><b>ABOUT</b></a>
+    <a href="#myMap" class="w3-bar-item w3-button"><b>CONTACT</b></a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-text-black w3-tag w3-xlarge" style="background:#E2A683">Open from 8am to 10pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:80px">KARAIYA STOP<br>Made with love<br></span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:80px"><b>KARAIYA STOP<br>Made with love<br></b></span>
+    <span class="w3-text-orange w3-hide-small" style="font-size:40px">"Your Tummy is our TOP Priority"</span>
+    <span class="w3-text-orange w3-hide-large w3-hide-medium" style="font-size:40px"><b>"Your Tummy is our TOP Priority"</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge"style="background:#E2A683">Can I see what you can offer me today?</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-gray">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Silog Meals');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-gray">Silog Meals</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-gray">Drinks</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3- black">
+      <img src="https://littlecaesarsdelivery.sg/wp-content/uploads/2021/01/hawaiian.png" style="width: 15%">
+      <h1><b>Hawaiian Pizza</b><br>Family size (16") <span class="w3-right w3-tag w3-dark-grey w3-round">Php 299.00</span>
+      </h1>
+      
+      <hr>
+   
+      <img src="https://www.pngkey.com/png/full/2-23987_cheese-and-bacon-pizza.png" style="width: 15%">
+      <h1><b>Bacon and Cheese Pizza</b><br>Family size (16") <span class="w3-right w3-tag w3-dark-grey w3-round">Php 299.00</span></h1>
+
+      <hr>
+      
+      <img src="https://thumbs.dreamstime.com/b/pepperoni-pizza-arrangement-isolated-black-background-close-up-pepperoni-pizza-arrangement-isolated-black-background-close-159180354.jpg" style="width: 24%">
+      <h1><b>Pepperoni Pizza</b><br>Family size (16") <span class="w3-right w3-tag w3-dark-grey w3-round">Php 299.00</span></h1>
+      
+      <hr>
+       
+      <img src="https://melissatraub.com/wp-content/uploads/2020/08/Pizza-black-background-768x1024.jpg" style="width: 17%">
+      <h1><b>Cheesy Vegan Pizza</b><br>Family size (16") <span class="w3-right w3-tag w3-dark-grey w3-round">Php 299.00</span></h1>
+      
+      <hr>
+      
+      <img src="https://thumbs.dreamstime.com/b/pizza-tuna-olives-onions-mozzarella-cheese-tomato-sauce-black-background-top-view-254048410.jpg" style="width: 25%">
+      <h1><b>Tuna Flakes</b> <span class="w3-tag w3-red w3-round">Hot!</span><br>Family size (16")<span class="w3-right w3-tag w3-dark-grey w3-round">Php 320.00</span></h1>
+      
+      <hr>
+
+      <img src="" style="width: 15%">
+      <img src="https://d2mekbzx20fc11.cloudfront.net/uploads/Smokey-BBQ-Pulled-Jackfruit_600x600.png" style="width: 15%">
+      <h1><b>Marie's Special Pizza</b> <span class="w3-tag w3-grey w3-round">New</span> <br>Family size (16")<span class="w3-right w3-tag w3-dark-grey w3-round">Php 350.00</span></h1>
+     
+    </div>
+
+    <div id="Silog Meals" class="w3-container menu w3-padding-32 w3-black">
+      <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.6435-9/135623055_189603046240031_2272746473482274542_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGPMT45QwZvBhEqIkj9ASY9L_2nMBPU3j8v_acwE9TeP0gzxaEF1O8GxXZX6HuHo9YxwPz1T2wcG8itCGO-alIl&_nc_ohc=DgISzCgbrpsAX_H3aJ9&_nc_ht=scontent.fmnl9-2.fna&oh=00_AfCVVOIo1Wp56_NNxOXJGaYS5EeRfOmAMMn8F1biV0toxA&oe=63E5E632" style="width: 25%">
+      <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">Php 99.00</span></h1>
+      <p class="w3-text-grey">Hotdog, Rice, Egg</p>
+      <hr>
+
+      <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t1.6435-9/135363882_189602916240044_4692596115471779643_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHfFc36IJM-QHgyjwYSVC6MM3T5vV_KxfUzdPm9X8rF9VaNl7hdddQ9hqixy-bufLDuoLUydDCF2T5JZBUB3GnE&_nc_ohc=uyMHj9t0KEkAX_bHhbX&_nc_ht=scontent.fceb2-2.fna&oh=00_AfCqXTNPmQePo8S4Lxwyac3BMffZKof-9FLDdrTSAq878A&oe=63E5D443" style="width: 25%">
+      <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">Php 110.00</span></h1>
+      <p class="w3-text-grey">Tocino, Rice, Egg</p>
+      <hr>
+       
+      <img src="https://scontent.fmnl9-4.fna.fbcdn.net/v/t1.6435-9/135815419_189602979573371_2497550030222293423_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGEMV3kCl7GZnZ7hXtLfl71hRLo6aSChfeFEujppIKF90PrVTEDSz4hjVtDBAXDsL9tZ7jHIxHBzWylVcOL1GG6&_nc_ohc=gEyBXcpc5m4AX-BF7Bc&_nc_ht=scontent.fmnl9-4.fna&oh=00_AfARr5DnCXX0NCDGNowMhntM_iPp_PgiRCIIFRto82ZfeQ&oe=63E5F10D" style="width: 25%">
+      <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">Php 110.00</span></h1>
+      <p class="w3-text-grey">Longganisa de Cebu, Rice, Egg</p>
+      <hr>
+      
+      <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t1.6435-9/135865442_189602939573375_6346546642055513389_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEnuNangDZVlBM0ewiaDERpp9V3N7Mi15Wn1Xc3syLXlX5keh2FMEuGmlj0TAvGDE7DiNxA2YiAr2nuva3UFhZG&_nc_ohc=xX0lJS0vQhkAX_npxwX&_nc_ht=scontent.fceb2-2.fna&oh=00_AfCJ3H3fhEGkTkilo__O2yrw2yfBIWd940gtF3dXzEjtAQ&oe=63E5EDCF" style="width: 25%">
+      <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">Php 129.00</span></h1>
+      <p class="w3-text-grey">Bangus Sisig, Rice, Egg</p>  
+      <hr>
+
+      <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t1.6435-9/135662813_189602959573373_1323872373814342229_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHs6gDeFNoewEKVk7VV2y2mwmzF5yALVkzCbMXnIAtWTOa_FuDP8OXA7qH0u2tdMa6l_F8JXkBMf2sLkhxTeOHz&_nc_ohc=PiTDXUncRygAX9GL0tW&_nc_ht=scontent.fceb2-2.fna&oh=00_AfCLgiPQmZUpDBilKN9qmBwvKbppqISYwMO68nAZ1rpBXQ&oe=63E5CEBD" style="width: 25%">
+      <h1> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">Php 139.00</span></h1>
+      <p class="w3-text-grey">Pork Sisig, Rice, Egg</p>
+    </div>
+
+
+    <div id="Drinks" class="w3-container menu w3-padding-32 w3-black">
+      <h1><b>Water</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Ask the Waiter</span></h1>
+
+      <hr>
+
+      <img src="https://imageproxy.wolt.com/menu/menu-images/62d95c3468618d364353b1be/1d74cf5a-7260-11ed-99e9-fe9874beaa84_coca_cola.jpeg_v_2022120218" style="width: 23%">
+      <h1><b> Coca-Cola</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Php 70.00</span></h1>
+      
+      <hr>
+   
+      <img src="https://imageproxy.wolt.com/menu/menu-images/62d95c3468618d364353b1be/1d7e51f6-7260-11ed-99e9-fe9874beaa84_sprite.jpeg_v_2022120218" style="width: 23%">
+      <h1><b> Sprite</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Php 70.00</span></h1>
+      
+      <hr>
+
+      <img src="https://imageproxy.wolt.com/menu/menu-images/62d95c3468618d364353b1be/1d78e1a8-7260-11ed-99e9-fe9874beaa84_fanta.jpeg_v_2022120218" style="width: 23%">       
+      <h1><b> Fanta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Php 70.00</span></h1>
+      
+      <hr>
+      
+      <img src="https://t3.ftcdn.net/jpg/04/94/65/00/360_F_494650090_IcQdESuoJQ6pxEYzAPisUJLizZKt9BVJ.jpg" style="width: 15%">
+      <h1><b>Iced Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Php 55.00</span></h1>
+      
+      <hr>
+      
+      <img src="https://thumbs.dreamstime.com/b/cold-beer-foam-mug-black-isolated-background-blank-space-logo-text-stock-photo-foamy-close-up-182240175.jpg" style="width: 20%">
+      <h1><b>Beer</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Php 89.00</span></h1>
+
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>The Karaiya stop started last February 7,2019 and becomes one of the best pizza in town and famous pizza stop over.Our recipe is not just pizza we also have different kinds of silog or rice and egg with different side dish.Our recipe was made with love and all dedicated to our customer because your tummy is our top priority.</p>
+    <p><strong>The Chef?</strong> Ms El of Oslob<img src="https://thumbs.dreamstime.com/b/chef-woman-gesturing-okay-sign-young-confident-uniform-winking-one-eye-ok-her-hand-45290258.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Monday and Tuesday  8.00AM - 10:00PM</p>
+        <p>Wednesday 10:00AM - 10:00PM</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Thursday and Friday 8:00AM - 10:00PM</p>
+        <p>Saturday 8:00AM - 10:00PM</p>
+        <p>Sunday- Closed (FAMILY TIME)</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:65px">Contact</h1>
+    <p>Globe- 09164834827</p>
+    <p>Smart- 09473752241</p>
+    <p>Find us at Oslob,Cebu near BaluarTea</p>
+    <p><span class="w3-tag">FYI!</span> We offer "Cash on Delivery" with free delivery fee.Free delivery fee is only available within Oslob municipality only,outside Oslob fee depends on how far to deliver. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>For orders</strong> just message us:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Address/Landmark" required name="Address/Landmark"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="YY-MM-DD TIME 20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your order" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-brown w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="w3schools" target="_blank" class="w3-hover-text-green">w3schools</a></p>
+	
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-gray", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-gray";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
